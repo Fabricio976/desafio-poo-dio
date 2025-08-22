@@ -3,7 +3,6 @@ package com.exemplo.entitys;
 import java.io.Serial;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -17,7 +16,7 @@ public class Emprestimo implements Serializable {
     private final Livro livro;
     private final Usuario usuario;
     private final Date dataEmprestimo;
-    private Date dataDevolucao;
+    private final Date dataDevolucao;
     private double multa;
 
     public Emprestimo(Livro livro, Usuario usuario) {
@@ -44,15 +43,10 @@ public class Emprestimo implements Serializable {
         return 0.0;
     }
 
-    // Getters
     public Livro getLivro() { return livro; }
     public Usuario getUsuario() { return usuario; }
-    public Date getDataEmprestimo() { return dataEmprestimo; }
     public Date getDataDevolucao() { return dataDevolucao; }
-    public double getMulta() { return multa; }
     public void setMulta(double multa) { this.multa = multa; }
-
-    public void setDataDevolucao(Date dataDevolucao) {this.dataDevolucao = dataDevolucao;}
 
 
     @Override

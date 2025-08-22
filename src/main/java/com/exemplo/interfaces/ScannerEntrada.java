@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ScannerEntrada implements LeitorUsuario {
 
-    private Scanner scanner;
+    private final Scanner scanner;
 
     public ScannerEntrada() {
         this.scanner = new Scanner(System.in);
