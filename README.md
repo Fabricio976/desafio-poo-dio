@@ -25,10 +25,3 @@ O sistema oferece as seguintes funcionalidades através de um menu interativo:
 Linguagem: Java 21
 Gerenciador de Dependências: Apache Maven
 Testes: JUnit 5 e Mockito
-
-Gerenciador de Dependências: Apache Maven
-
-Testes: JUnit 5 e Mockito
-
-
-mvn test
